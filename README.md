@@ -11,6 +11,6 @@ As of 9/15/20:
 The `test` directory contains files for testing.
 
 ## activationfunction
-Contains `ActivationFunction` interface and implementations `LinearActivationFunction`, `IdentityActivationFunction`, `ParametricReLUActivationFunction`, `ReLUActivationFunction`, `LeakyReLUActivationFunction`, `SigmoidActivationFunction`, `TanhActivationFunction`, `SwishActivationFunction`
+Contains `ActivationFunction` interface and implementations `LinearActivationFunction`, `IdentityActivationFunction`, `ParametricReLUActivationFunction`, `ReLUActivationFunction`, `LeakyReLUActivationFunction`, `SigmoidActivationFunction`, `TanhActivationFunction`, `SwishActivationFunction`, `StepActivationFunction`
 
 TODO as of 9/15/20: Uh... stop pushing those class files. I think I've got enough activation functions. Time to start building a Neuron!
