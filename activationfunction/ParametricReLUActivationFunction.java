@@ -2,7 +2,7 @@ package neuralnetwork.activationfunction;
 import neuralnetwork.activationfunction.ActivationFunction;
 
 /**
- * The ParametricReLUActivationFunction class transforms the weighted sum into a
+ * The ParametricReLUActivationFunction class transforms the weighted sum with a
  * parametrized version of the ReLU function, given by the following piecewise
  * definition, for real values m:
  *
