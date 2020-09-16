@@ -8,6 +8,7 @@ import neuralnetwork.activationfunction.LeakyReLUActivationFunction;
 import neuralnetwork.activationfunction.SigmoidActivationFunction;
 import neuralnetwork.activationfunction.TanhActivationFunction;
 import neuralnetwork.activationfunction.SwishActivationFunction;
+import neuralnetwork.activationfunction.StepActivationFunction;
 
 public class ActivationFunctionTests
 {
@@ -21,6 +22,7 @@ public class ActivationFunctionTests
       testSigmoidActivationFunction();
       testTanhActivationFunction();
       testSwishActivationFunction();
+      testStepActivationFunction();
    }
    
    public static void evaluate(ActivationFunction f)
@@ -87,5 +89,12 @@ public class ActivationFunctionTests
       System.out.println("SwishActivationFunction()");
       ActivationFunction swish = new SwishActivationFunction();
       evaluate(swish);
+   }
+   
+   public static void testStepActivationFunction()
+   {
+      System.out.println("StepActivationFunction()");
+      ActivationFunction step = new StepActivationFunction();
+      evaluate(step);
    }
 }
