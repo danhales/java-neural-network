@@ -5,7 +5,7 @@ I'm building this package from the ground up to get my Java up and running again
 
 The goal is to dive deeper into the internals of neural networks, to really understand how they're doing what they're doing.
 
-As of 9/15/20:
+As of 9/16/20:
 
 ## test
 The `test` directory contains files for testing.
@@ -13,4 +13,5 @@ The `test` directory contains files for testing.
 ## activationfunction
 Contains `ActivationFunction` interface and implementations `LinearActivationFunction`, `IdentityActivationFunction`, `ParametricReLUActivationFunction`, `ReLUActivationFunction`, `LeakyReLUActivationFunction`, `SigmoidActivationFunction`, `TanhActivationFunction`, `SwishActivationFunction`, `StepActivationFunction`
 
-TODO as of 9/15/20: Uh... stop pushing those class files. I think I've got enough activation functions. Time to start building a Neuron!
+## neuron
+Contain `Perceptron`
