@@ -15,7 +15,7 @@ public class PerceptronTests {
       // testSetWeightsDeepCopy();
       // testSetBiasTerm();
       // testPreactivate();
-      testPropagate();
+      testActivate();
    }
    
    public static void printPerceptron(Perceptron p)
@@ -97,8 +97,8 @@ public class PerceptronTests {
       System.out.println(perceptron.preactivate(inputs));
    }
    
-   public static void testPropagate() {
-      System.out.println("========== testPropagate ==========\n");
+   public static void testActivate() {
+      System.out.println("========== testActivate ==========\n");
       Perceptron[] p = new Perceptron[9];
 
       p[0] = new Perceptron(2, new IdentityActivationFunction());
@@ -118,7 +118,7 @@ public class PerceptronTests {
          System.out.printf("p[%d]\n\n", i);
          p[i].setWeights(weights);
          printPerceptron(p[i]);
-         System.out.printf("Output: %.3f\n\n", p[i].propagate(inputs));
+         System.out.printf("Output: %.3f\n\n", p[i].activate(inputs));
       }
       
       System.out.println();

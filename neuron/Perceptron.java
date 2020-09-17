@@ -33,6 +33,9 @@ import neuralnetwork.activationfunction.ActivationFunction;
  * The bias term and weights can be adjusted or retrieved using the appropriate setters 
  * and getters. Weights are randomized by default, but can be set manually, e.g. to 
  * implement an existing model. If the bias term is not specified, it defaults to -1.
+ *
+ *
+ *
  */
  
 public class Perceptron {
@@ -93,12 +96,12 @@ public class Perceptron {
    }
    
    /**
-    * propagate preactivates then feeds the weighted sum (with bias) into
+    * activate preactivates then feeds the weighted sum (with bias) into
     * the activation function.
     * @param inputs the inputs from the previous layer
     * @return the output value of the Neuron
     */
-   public double propagate(double[] inputs) {
+   public double activate(double[] inputs) {
       return activationFunction.evaluate(preactivate(inputs));
    }
    
