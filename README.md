@@ -17,6 +17,9 @@ Contains `Perceptron` class
 ## layer
 Contains `Layer` class
 
+As of 9/18/20:
+DenseLayer class can accept an array of inputs and produce an array of outputs. The Model class will need to handle interactions between layers, but for now, they are self-contained. Renamed Layer to DenseLayer, because the Perceptrons in this layer are all fully-connected.
+
 As of 9/17/20:
 Primary focus right now is on putting together the architecture for a Dense layer of simple Perceptrons. So far, the Layer class can hold an array of Perceptrons, and the constructor accepts the number of Perceptrons, the number of inputs for each Perceptron, and the ActivationFunction to be used.
 

@@ -16,7 +16,7 @@ public class StepActivationFunction implements ActivationFunction {
     * @return the function evaluated on the weighted sum
     */
    public double evaluate(double input) {
-      if (input > 1) {
+      if (input > 0) {
          return 1;
       } else {
          return 0;
