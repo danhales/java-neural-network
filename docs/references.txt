@@ -1,0 +1,7 @@
+This file contains a list of references to articles, books, and websites
+that I've found useful throughout the development process (with a little
+bit of commentary on what I found useful).
+
+http://neuralnetworksanddeeplearning.com/
+This is a great, free online book by Michael Nielsen that dives deep into 
+the math behind everything I'm trying to figure out with this project.
