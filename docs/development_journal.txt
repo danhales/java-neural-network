@@ -1,0 +1,36 @@
+Development Journal
+
+My thoughts on the project, as I encounter them. 
+
+9/22/2020
+I feel bad for getting a week into this project before realizing I should start this
+development journal, but here we are. Before today, I had initial versions of
+
+ActivationFunction interface
+IdentityActivationFunction class
+LeakyReLUActivationFunction class
+LinearActivationFunction class
+ParametricReLUActivationFunction class
+ReLUActivationFunction class
+SigmoidActivationFunction class
+StepActivationFunction class
+SwishActivationFunction class
+TanhActivationFunction class
+Neuron (previously called Perceptron, which I'll rewrite as its own class later) class
+DenseLayer class
+
+Hit a snag today. I was hoping to make all of my Layers include an ActivationFunction,
+but the SoftmaxActivationFunction has a different method signature. It returns an array
+of doubles (the probabilities of the input corresponding to that entry's class), but
+the ActivationFunction interface requires a double as a return value.
+
+Current plan is to just roll with it and retool Softmax into its own layer, instead of
+an activation function. The reasoning is that Softmax is rarely used as the activation
+function in a hidden layer, and the classification layer at the end has some additional
+things to do, on top of simply computing an output value.
+
+I recognize that this is something that will need to get retooled later, but I'm
+hoping to continue making progress for now!
+
+Pushing this file before midnight to get that sexy green square on my github for today.
+(Not done working, just don't want a gap.)
