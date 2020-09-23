@@ -32,5 +32,4 @@ things to do, on top of simply computing an output value.
 I recognize that this is something that will need to get retooled later, but I'm
 hoping to continue making progress for now!
 
-Pushing this file before midnight to get that sexy green square on my github for today.
-(Not done working, just don't want a gap.)
+Pushed past midnight so now I have an empty square on my dashboard :(
