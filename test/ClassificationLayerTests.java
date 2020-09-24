@@ -1,6 +1,7 @@
 package neuralnetwork.test;
 import neuralnetwork.layer.ClassificationLayer;
 import neuralnetwork.activationfunction.*;
+import neuralnetwork.neuron.Neuron;
 
 public class ClassificationLayerTests {
    public static void main(String[] args) {
@@ -12,15 +13,16 @@ public class ClassificationLayerTests {
       ClassificationLayer cl = new ClassificationLayer(labels,
                                                        3,
                                                        new IdentityActivationFunction());
-      double[] inputs1 =  {100, 0, 0}; 
-      double[] inputs2 =  {0, 100, 0};
-      double[] inputs3 =  {0, 0, 100};  
+      double[] inputs = {1, -1, 0};
+      System.out.println("Evaluate:");
+      double[] predictions = cl.evaluate(inputs);
       
-      System.out.println(cl.predictLabel(inputs1));
-      System.out.println(cl.predictLabel(inputs2));
-      System.out.println(cl.predictLabel(inputs3));
-      System.out.println();
-                                                    
-      cl.printDebug();
+      for (int i = 0; i < predictions.length; i++) {
+         System.out.println(predictions[i]);
+      }
+      
+      System.out.println(cl.predictLabel(inputs));
+      
+      // cl.printDebug();
    }
 }

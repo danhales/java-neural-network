@@ -58,6 +58,7 @@ public class ClassificationLayer {
     */
    public int predict(double[] inputs) {
       double[] probabilities = evaluate(inputs);
+      
       int maxIndex = 0;
       for (int i = 0; i < probabilities.length; i++) {
          if (probabilities[i] > probabilities[maxIndex]) {

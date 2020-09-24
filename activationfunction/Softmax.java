@@ -31,7 +31,7 @@ public class Softmax {
       double[] outputs = new double[inputs.length];
       
       for (int i = 0; i < inputs.length; i++) {
-         outputs[i] = Math.exp(outputs[i]) / denominator;
+         outputs[i] = Math.exp(inputs[i]) / denominator;
       }
       
       return outputs;
