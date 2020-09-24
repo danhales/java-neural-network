@@ -2,6 +2,20 @@ Development Journal
 
 My thoughts on the project, as I encounter them. 
 
+9/23/2020
+Admittedly, I didn't get a whole lot done today. I realized that Softmax was not
+working properly and spent a while debugging that. It turns out I accidentally
+divided outputs[i] / denominator instead of inputs[i] / denominator, which meant
+that all predictions were defaulting to 0.0 (the default value in outputs array).
+Fortunately, I got that working. Testing ClassificationLayer shows that it is
+currently choosing the correct label, meaning Softmax is returning the right
+index.
+
+That said, I should really McGyver a way to control the weights in the Neurons
+better for reproducibility in testing. As of right now, they're randomized
+initially and buried within private fields, so I'll need to add in some 
+mutators to allow me to create predictable results.
+
 9/22/2020
 I feel bad for getting a week into this project before realizing I should start this
 development journal, but here we are. Before today, I had initial versions of
